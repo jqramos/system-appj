@@ -11,5 +11,13 @@
 
     <artifactId>dao</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.port</groupId>
+            <artifactId>data</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
