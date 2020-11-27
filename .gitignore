@@ -1,0 +1,5 @@
+# Project exclude paths
+/core/dao/target/
+/core/data/target/
+/core/services/target/
+/core/web-map/target/
