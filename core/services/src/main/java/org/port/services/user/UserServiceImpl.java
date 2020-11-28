@@ -21,19 +21,15 @@ public class UserServiceImpl implements UserService {
         return userDao.save(user);
     }
 
-    public Iterable<User> getAllReservations(){
+    public Iterable<User> getAllUser(){
         return userDao.findAll();
     }
 
-    public void deleteAllReservations(){
-        userDao.deleteAll();
-    }
-
-    public void deleteReservationById(String id){
+    public void deleteUserById(String id){
         userDao.deleteById(id);
     }
 
-    public Optional<User> findReservationById(String id){
+    public Optional<User> findUserById(String id){
         return userDao.findById(id);
     }
 }
