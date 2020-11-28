@@ -1,5 +1,6 @@
 package org.port.services;
 
+import org.port.data.search.SearchData;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -10,4 +11,6 @@ public interface BaseService<T, I> {
     List<T> findAll();
 
     Page<T> findAll(Pageable pageable);
+
+    Page<T> search(SearchData<T> searchData);
 }

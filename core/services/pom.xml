@@ -34,6 +34,11 @@
             <artifactId>data</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.port</groupId>
+            <artifactId>util</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

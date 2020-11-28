@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="data" />
+        <module name="web-map" />
+        <module name="util" />
         <module name="dao" />
         <module name="app" />
         <module name="services" />
-        <module name="web-map" />
-        <module name="data" />
       </profile>
     </annotationProcessing>
   </component>
