@@ -1,2 +1,2 @@
 # system-appj
-mongodb and java application used for study purposes
+mongodb and spring boot application used for study purposes
