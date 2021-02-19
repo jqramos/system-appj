@@ -1,4 +1,4 @@
-package org.port.web.controller.art;
+package org.port.web.controllers.art;
 
 import org.port.data.annotation.ApiControl;
 import org.port.data.model.Art;

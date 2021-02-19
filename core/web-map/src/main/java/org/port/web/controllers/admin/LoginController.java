@@ -1,4 +1,4 @@
-package org.port.web.controller;
+package org.port.web.controllers.admin;
 
 import org.port.data.annotation.ApiControl;
 import org.springframework.web.bind.annotation.GetMapping;

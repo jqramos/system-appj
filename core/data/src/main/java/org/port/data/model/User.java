@@ -22,6 +22,8 @@ public class User {
 
     public String username;
 
+    public String password;
+
     @DateTimeFormat(pattern="dd-MM-yyyy HH:mm")
     private Date createdTime;
 
