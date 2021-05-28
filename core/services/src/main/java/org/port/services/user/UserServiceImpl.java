@@ -50,6 +50,11 @@ public class UserServiceImpl extends AbstractBaseService<User, String> implement
     }
 
     @Override
+    public Optional<User> findByEmail(String email) {
+       return userDao.findByEmail(email);
+    }
+
+    @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User Not Found with username: " + username));

@@ -7,8 +7,9 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @SpringBootApplication(scanBasePackages = {
-    "org.port.web",
-    "org.port.services"
+    "org.port.web.controllers",
+    "org.port.services",
+    "com.port.app"
 })
 @EnableMongoRepositories({
         "org.port.dao"

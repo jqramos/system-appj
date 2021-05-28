@@ -12,4 +12,8 @@ public interface UserService extends BaseService<User, String>, UserDetailsServi
     Optional<User> findByUsername(String username);
 
     Boolean existsByUsername(String username);
+
+    Optional<User> findByEmail(String email);
+
+    User save(User user);
 }
