@@ -26,7 +26,6 @@ public class UserServiceImpl extends AbstractBaseService<User, String> implement
     public User save(User user){
         return userDao.save(user);
     }
-
     public Iterable<User> getAllUser(){
         return userDao.findAll();
     }

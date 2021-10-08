@@ -72,14 +72,14 @@ public class ServiceTest {
     @Test
     public void getData() {
         List<Art> artLists = new ArrayList<Art>();
-                List<Art> artList = Stream.of(
-                Art.builder().id("1").title("test")
-                        .desc("test").category(Category.COMMISSIONED)
-                        .url("google.com").date(new Date()).build(),
-                Art.builder().id("2").title("test2")
-                        .desc("test2").category(Category.FANART)
-                        .url("google.com/2").date(new Date()).build()
-        ).collect(Collectors.toList());
+        List<Art> artList = Stream.of(
+            Art.builder().id("1").title("test")
+                    .desc("test").category(Category.COMMISSIONED)
+                    .url("google.com").date(new Date()).build(),
+            Art.builder().id("2").title("test2")
+                    .desc("test2").category(Category.FANART)
+                    .url("google.com/2").date(new Date()).build()
+            ).collect(Collectors.toList());
 
         artList.stream().forEach( item -> {
             artList.add(item);
@@ -116,5 +116,13 @@ public class ServiceTest {
                 .bodyToMono(User.class);
         result.subscribe();
     }
+
+    @Test
+    public void tesstsooo(){
+        int[] asd =  {1, 0, 0, 0, 2, 2, 2};
+        Arrays.stream(asd).count();
+    }
+
+
 
 }

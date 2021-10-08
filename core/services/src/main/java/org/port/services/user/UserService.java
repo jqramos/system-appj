@@ -8,7 +8,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import java.util.Optional;
 
 public interface UserService extends BaseService<User, String>, UserDetailsService {
-
     Optional<User> findByUsername(String username);
 
     Boolean existsByUsername(String username);

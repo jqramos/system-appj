@@ -21,19 +21,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .requestMatchers()
-                .and()
-                .authorizeRequests()
-                .antMatchers("/api/default")
-                .permitAll()
-                .antMatchers("/api/**").authenticated()
+        http.authorizeRequests().anyRequest().authenticated()
                 .and()
                 .oauth2Login()
+                .defaultSuccessUrl("/api/success")
                 .redirectionEndpoint()
                 .baseUri("/oauth2/callback/*")
                 .and()
                 .userInfoEndpoint()
                 .oidcUserService(oidcUserService);
     }
+
 }

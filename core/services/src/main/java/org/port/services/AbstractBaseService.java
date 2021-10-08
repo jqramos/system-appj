@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class AbstractBaseService<T, I> implements BaseService<T, I> {
+public abstract class AbstractBaseService<T, I> implements BaseService<T, I> {
 
     private final BaseRepository<T, I> repo;
     @Autowired
