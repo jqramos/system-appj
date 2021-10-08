@@ -5,3 +5,14 @@
 /core/web-map/target/
 /core/util/target/
 /.idea/
+/app/target/app-1.0-SNAPSHOT.jar
+/app/target/classes/com/port/app/AppApplication.class
+/app/target/test-classes/com/port/app/AppApplicationTests.class
+/app/target/classes/application.properties
+/app/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/app/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/app/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/app/target/classes/logback.xml
+/app/target/maven-archiver/pom.properties
+/app/target/classes/com/port/app/config/SecurityConfig.class
